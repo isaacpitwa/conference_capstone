@@ -15,7 +15,7 @@ a {
   width: 100%;
 }
 
-.container > section, .container > nav {
+.container > nav, .container > div {
   max-width: 1100px;
   width: 98%;
   margin: 0px auto;
@@ -48,11 +48,11 @@ a {
   position: relative;
 }
 
-header {
+header div {
   height: 80px;
   line-height: 80px;
 }
-header nav {
+header div nav {
   width: calc(100% - 130px);
   height: 80px;
   float: right;
@@ -61,12 +61,12 @@ header nav {
   vertical-align: middle;
   position: relative;
 }
-header nav .nav-list li {
+header div nav .nav-list li {
   margin: 0px;
   padding: 0px;
   display: inline-block;
 }
-header nav .nav-list li a {
+header div nav .nav-list li a {
   margin: 0px 25px;
   color: #888888;
   font-size: 0.938em;
@@ -74,7 +74,7 @@ header nav .nav-list li a {
   text-decoration: none;
   vertical-align: middle;
 }
-header nav .nav-list li .btn-link {
+header div nav .nav-list li .btn-link {
   font-size: 1.125em;
   font-weight: bold;
   vertical-align: middle;
@@ -84,6 +84,92 @@ header nav .nav-list li .btn-link {
   color: #fff;
   border: 0;
   display: inline-block;
+}
+
+.landing-wrap {
+  height: 855px;
+  background-image: url(/images/base/desktop/bg_landing.png);
+  background-repeat: repeat-x;
+  background-position: center center;
+}
+.landing-wrap div:first-child {
+  padding-top: 140px;
+}
+.landing-wrap div:first-child summary {
+  width: 50%;
+  text-align: justify;
+  width: 631px;
+  border: 4px solid white;
+  background-color: #f7f7f8;
+  margin: 15px 0px 40px;
+  line-height: 220%;
+  padding: 10px 25px 0px;
+  font-size: 1.125em;
+}
+.landing-wrap div:first-child .location {
+  text-align: left;
+}
+.landing-wrap div:first-child .location h2 {
+  font: 700 36px Verdana;
+  color: #575757;
+}
+.landing-wrap div:first-child .location p {
+  font-size: 1.5em;
+}
+
+.program-wrap {
+  background-image: url(/images/base/pattern_bg.png);
+  background-repeat: repeat;
+  background-color: #272a32;
+  height: 637px;
+}
+.program-wrap div {
+  text-align: center;
+  padding-top: 79px;
+  color: white;
+}
+.program-wrap div h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+.program-wrap div .guide-bar {
+  width: 53px;
+  border-top: 1px solid #ef513c;
+  margin: 16px auto 54px;
+}
+.program-wrap div .program-card {
+  margin: 0px 0px 0px 3px;
+  padding: 8px;
+  border: 0px;
+  float: left;
+  width: calc(18% - 3px);
+  height: 228px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.program-wrap div .program-card h4 {
+  color: #ef513c;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.program-wrap div .program-card p {
+  text-align: center;
+  word-break: keep-all;
+  color: white;
+  font-size: 0.813em;
+  padding: 8px 17px;
+  line-height: 1.5em;
+}
+.program-wrap div a {
+  margin-top: 20px;
+  font-size: 1.125em;
+  color: white;
+  float: right;
+}
+
+@media screen and (max-width: 1000px) {
+  .header_wrap {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
