@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+}
+
+.container > section, .container > nav {
+  max-width: 1100px;
+  width: 98%;
+  margin: 0px auto;
+}
+
+.top-menu {
+  background-color: #3e3e3e;
+  height: 36px;
+  text-align: right;
+  line-height: 36px;
+  vertical-align: middle;
+}
+.top-menu ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  float: right;
+}
+.top-menu ul li {
+  display: inline-block;
+  margin: 0px 20px 0px 0px;
+  padding: 0px;
+}
+.top-menu ul a {
+  color: white;
+}
+
+.header-wrap {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 8px 0px;
+  position: relative;
+}
+
+header {
+  height: 80px;
+  line-height: 80px;
+}
+header nav {
+  width: calc(100% - 130px);
+  height: 80px;
+  float: right;
+  color: black;
+  text-align: right;
+  vertical-align: middle;
+  position: relative;
+}
+header nav .nav-list li {
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+}
+header nav .nav-list li a {
+  margin: 0px 25px;
+  color: #888888;
+  font-size: 0.938em;
+  font-weight: 700;
+  text-decoration: none;
+  vertical-align: middle;
+}
+header nav .nav-list li .btn-link {
+  font-size: 1.125em;
+  font-weight: bold;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #ef513c;
+  padding: 0 10px;
+  color: #fff;
+  border: 0;
+  display: inline-block;
+}
+
+/*# sourceMappingURL=styles.css.map */
