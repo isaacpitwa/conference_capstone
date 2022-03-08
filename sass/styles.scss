@@ -51,13 +51,10 @@ header div {
         .btn-link {
             font-size: 1.125em;
             font-weight: bold;
-            vertical-align: middle;
             text-align: center;
-            background-color: #ef513c;
-            padding: 0 10px;
-            color: #fff;
-            border: 0;
-            display: inline-block;
+            padding: 10px 15px;
+            color: #ef513c;
+            border: 2px solid #ef513c;
         }
     }
     
@@ -108,28 +105,32 @@ header div {
             font-size: 30px;
             font-weight: 400;
         }
-        .program-card {
-            margin: 0px 0px 0px 3px;
-            padding: 8px;
-            border: 0px;
-            float: left;
-            width: calc(18% - 3px);
-            height: 228px;
-            background: rgba(255, 255, 255, 0.1);
-            h4{
-                color: rgb(239, 81, 60);
-                font-size: 1.5em;
-                font-weight: 700;
-            }
-            p{
-                text-align: center;
-                word-break: keep-all;
-                color: rgb(255, 255, 255);
-                font-size: 0.813em;
-                padding: 8px 17px;
-                line-height: 1.5em;
+        .program-list {
+            padding-bottom: 16px;
+            .program-card {
+                margin: 0px 0px 0px 3px;
+                padding: 8px;
+                border: 0px;
+                float: left;
+                width: calc(18% - 3px);
+                height: 228px;
+                background: rgba(255, 255, 255, 0.1);
+                h4{
+                    color: rgb(239, 81, 60);
+                    font-size: 1.5em;
+                    font-weight: 700;
+                }
+                p{
+                    text-align: center;
+                    word-break: keep-all;
+                    color: rgb(255, 255, 255);
+                    font-size: 0.813em;
+                    padding: 8px 17px;
+                    line-height: 1.5em;
+                }
             }
         }
+
     }
 }
 .speakers-wrap{
@@ -200,10 +201,12 @@ header div {
 }
 .sponsors-wrap{
     text-align: center;
+    background-color: rgb(46, 46, 46);
+
     .content {
         text-align: center;
         padding: 79px 16px 45px;
-        color: #272a32;
+        color:  rgb(255, 255, 255);
         height: auto;
         .sponsor-logos{
             overflow: auto;
@@ -220,7 +223,8 @@ header div {
                 position: relative;
                 margin-right: 50px;
                 img{
-                    width: 200px;
+                    width: 130px;
+                    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(4deg) brightness(103%) contrast(103%);
                 }
             }
         }
@@ -229,8 +233,7 @@ header div {
 }
 footer {
     font-size: 0.875em;
-    color: rgb(255, 255, 255);
-    background-color: rgb(46, 46, 46);
+    color: #272a32;
     padding: 32px;
     .content {
         img{
@@ -239,6 +242,7 @@ footer {
             vertical-align: middle;
             text-align: center;
             margin-right: 28px;
+            width: 200px;
         }
        
     }

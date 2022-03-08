@@ -3,6 +3,10 @@
   font-family: Poppins, sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 ul {
   list-style: none;
 }
@@ -38,11 +42,10 @@ a {
 }
 
 a.more-link {
-  margin-top: 20px;
   font-size: 1.125em;
   color: white;
-  float: right;
-  margin-right: 20px;
+  text-align: center;
+  text-decoration: underline;
 }
 
 .top-menu {
@@ -101,13 +104,10 @@ header div nav .nav-list li a {
 header div nav .nav-list li .btn-link {
   font-size: 1.125em;
   font-weight: bold;
-  vertical-align: middle;
   text-align: center;
-  background-color: #ef513c;
-  padding: 0 10px;
-  color: #fff;
-  border: 0;
-  display: inline-block;
+  padding: 10px 15px;
+  color: #ef513c;
+  border: 2px solid #ef513c;
 }
 
 .landing-wrap {
@@ -156,7 +156,10 @@ header div nav .nav-list li .btn-link {
   font-size: 30px;
   font-weight: 400;
 }
-.program-wrap div.content .program-card {
+.program-wrap div.content .program-list {
+  padding-bottom: 16px;
+}
+.program-wrap div.content .program-list .program-card {
   margin: 0px 0px 0px 3px;
   padding: 8px;
   border: 0px;
@@ -165,12 +168,12 @@ header div nav .nav-list li .btn-link {
   height: 228px;
   background: rgba(255, 255, 255, 0.1);
 }
-.program-wrap div.content .program-card h4 {
+.program-wrap div.content .program-list .program-card h4 {
   color: #ef513c;
   font-size: 1.5em;
   font-weight: 700;
 }
-.program-wrap div.content .program-card p {
+.program-wrap div.content .program-list .program-card p {
   text-align: center;
   word-break: keep-all;
   color: white;
@@ -245,11 +248,12 @@ header div nav .nav-list li .btn-link {
 
 .sponsors-wrap {
   text-align: center;
+  background-color: #2e2e2e;
 }
 .sponsors-wrap .content {
   text-align: center;
   padding: 79px 16px 45px;
-  color: #272a32;
+  color: white;
   height: auto;
 }
 .sponsors-wrap .content .sponsor-logos {
@@ -269,13 +273,13 @@ header div nav .nav-list li .btn-link {
   margin-right: 50px;
 }
 .sponsors-wrap .content .sponsor-logos a img {
-  width: 200px;
+  width: 130px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(4deg) brightness(103%) contrast(103%);
 }
 
 footer {
   font-size: 0.875em;
-  color: white;
-  background-color: #2e2e2e;
+  color: #272a32;
   padding: 32px;
 }
 footer .content img {
@@ -284,6 +288,7 @@ footer .content img {
   vertical-align: middle;
   text-align: center;
   margin-right: 28px;
+  width: 200px;
 }
 
 @media screen and (max-width: 1000px) {

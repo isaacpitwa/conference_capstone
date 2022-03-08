@@ -3,6 +3,9 @@ $bg-black :rgb(62, 62, 62);
     margin: 0;
     font-family: Poppins, sans-serif;
 }
+body{
+    overflow-x: hidden;
+}
 ul {
     list-style: none;
 }
@@ -31,9 +34,8 @@ a {
     display: table;
   }
 a.more-link{
-    margin-top: 20px;
     font-size: 1.125em;
     color: rgb(255, 255, 255);
-    float: right;
-    margin-right: 20px;
+    text-align: center;
+    text-decoration: underline;
 }
