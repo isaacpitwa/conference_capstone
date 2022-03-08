@@ -12,8 +12,28 @@ a {
 .container {
     width: 100%;
 }
-.container > nav,.container > div{
+.container > nav, .container  div.content{
     max-width: 1100px;
     width: 98%;
     margin: 0px auto;
+}
+.guide-bar{
+    width: 53px;
+    border-top: 1px solid rgb(239, 81, 60);
+    margin: 16px auto 54px;
+}
+.b-bottom{
+    border-bottom: 1px solid rgb(223, 223, 223);
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+a.more-link{
+    margin-top: 20px;
+    font-size: 1.125em;
+    color: rgb(255, 255, 255);
+    float: right;
+    margin-right: 20px;
 }

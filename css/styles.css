@@ -15,10 +15,34 @@ a {
   width: 100%;
 }
 
-.container > nav, .container > div {
+.container > nav, .container div.content {
   max-width: 1100px;
   width: 98%;
   margin: 0px auto;
+}
+
+.guide-bar {
+  width: 53px;
+  border-top: 1px solid #ef513c;
+  margin: 16px auto 54px;
+}
+
+.b-bottom {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+a.more-link {
+  margin-top: 20px;
+  font-size: 1.125em;
+  color: white;
+  float: right;
+  margin-right: 20px;
 }
 
 .top-menu {
@@ -92,10 +116,10 @@ header div nav .nav-list li .btn-link {
   background-repeat: repeat-x;
   background-position: center center;
 }
-.landing-wrap div:first-child {
+.landing-wrap div.content {
   padding-top: 140px;
 }
-.landing-wrap div:first-child summary {
+.landing-wrap div.content summary {
   width: 50%;
   text-align: justify;
   width: 631px;
@@ -106,14 +130,14 @@ header div nav .nav-list li .btn-link {
   padding: 10px 25px 0px;
   font-size: 1.125em;
 }
-.landing-wrap div:first-child .location {
+.landing-wrap div.content .location {
   text-align: left;
 }
-.landing-wrap div:first-child .location h2 {
+.landing-wrap div.content .location h2 {
   font: 700 36px Verdana;
   color: #575757;
 }
-.landing-wrap div:first-child .location p {
+.landing-wrap div.content .location p {
   font-size: 1.5em;
 }
 
@@ -123,21 +147,16 @@ header div nav .nav-list li .btn-link {
   background-color: #272a32;
   height: 637px;
 }
-.program-wrap div {
+.program-wrap div.content {
   text-align: center;
   padding-top: 79px;
   color: white;
 }
-.program-wrap div h1 {
+.program-wrap div.content h1 {
   font-size: 30px;
   font-weight: 400;
 }
-.program-wrap div .guide-bar {
-  width: 53px;
-  border-top: 1px solid #ef513c;
-  margin: 16px auto 54px;
-}
-.program-wrap div .program-card {
+.program-wrap div.content .program-card {
   margin: 0px 0px 0px 3px;
   padding: 8px;
   border: 0px;
@@ -146,12 +165,12 @@ header div nav .nav-list li .btn-link {
   height: 228px;
   background: rgba(255, 255, 255, 0.1);
 }
-.program-wrap div .program-card h4 {
+.program-wrap div.content .program-card h4 {
   color: #ef513c;
   font-size: 1.5em;
   font-weight: 700;
 }
-.program-wrap div .program-card p {
+.program-wrap div.content .program-card p {
   text-align: center;
   word-break: keep-all;
   color: white;
@@ -159,11 +178,112 @@ header div nav .nav-list li .btn-link {
   padding: 8px 17px;
   line-height: 1.5em;
 }
-.program-wrap div a {
-  margin-top: 20px;
-  font-size: 1.125em;
+
+.speakers-wrap {
+  height: auto;
+  padding-bottom: 35px;
+}
+.speakers-wrap div.content {
+  text-align: center;
+  padding-top: 79px;
+  color: #272a32;
+  height: auto;
+}
+.speakers-wrap div.content .speakers-list .speaker {
+  margin: 0px 0px 0px 10px;
+  border: 0px;
+  width: calc(50% - 10px);
+  float: left;
+  height: 249px;
+}
+.speakers-wrap div.content .speakers-list .speaker img {
+  float: left;
+  width: 178px;
+  margin-right: 30px;
+}
+.speakers-wrap div.content .speakers-list .speaker .desc {
+  text-align: left;
+}
+.speakers-wrap div.content .speakers-list .speaker .desc .speaker-name {
+  font-size: 22px;
+}
+.speakers-wrap div.content .speakers-list .speaker .desc .speaker-tag-name {
+  font-size: 14px;
+  margin-top: 5px;
+}
+.speakers-wrap div.content .speakers-list .speaker .desc .speaker-job {
+  font-size: 13px;
+  color: #ff4f38;
+  text-align: left;
+}
+.speakers-wrap div.content .speakers-list .speaker .desc .speaker-desc {
+  word-break: keep-all;
+  text-align: left;
+  font-size: 0.875em;
+  padding-right: 1em;
+  line-height: 24px;
+  margin-top: 24px;
+}
+.speakers-wrap div.content .more-link {
+  color: #333333;
+}
+
+.angel-sponsors {
+  color: #333333;
+  text-align: center;
+}
+.angel-sponsors div.content {
+  text-align: center;
+  padding: 79px 16px 45px;
+  color: #272a32;
+  height: auto;
+}
+.angel-sponsors div.content a {
+  display: block;
+  margin: 32px;
+}
+
+.sponsors-wrap {
+  text-align: center;
+}
+.sponsors-wrap .content {
+  text-align: center;
+  padding: 79px 16px 45px;
+  color: #272a32;
+  height: auto;
+}
+.sponsors-wrap .content .sponsor-logos {
+  overflow: auto;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+.sponsors-wrap .content .sponsor-logos a {
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+  margin-right: 50px;
+}
+.sponsors-wrap .content .sponsor-logos a img {
+  width: 200px;
+}
+
+footer {
+  font-size: 0.875em;
   color: white;
-  float: right;
+  background-color: #2e2e2e;
+  padding: 32px;
+}
+footer .content img {
+  margin-top: 21px;
+  float: left;
+  vertical-align: middle;
+  text-align: center;
+  margin-right: 28px;
 }
 
 @media screen and (max-width: 1000px) {

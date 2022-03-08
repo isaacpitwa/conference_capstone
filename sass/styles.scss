@@ -69,7 +69,7 @@ header div {
     background-image: url(/images/base/desktop/bg_landing.png);
     background-repeat: repeat-x;
     background-position: center center;
-    div:first-child {
+    div.content {
         padding-top: 140px;
         summary{
             width: 50%;
@@ -100,18 +100,13 @@ header div {
     background-repeat: repeat;
     background-color: rgb(39, 42, 50);
     height: 637px;
-    div{
+    div.content {
         text-align: center;
         padding-top: 79px;
         color: rgb(255, 255, 255);
         h1{
             font-size: 30px;
             font-weight: 400;
-        }
-        .guide-bar{
-            width: 53px;
-            border-top: 1px solid rgb(239, 81, 60);
-            margin: 16px auto 54px;
         }
         .program-card {
             margin: 0px 0px 0px 3px;
@@ -135,12 +130,117 @@ header div {
                 line-height: 1.5em;
             }
         }
-        a{
-            margin-top: 20px;
-            font-size: 1.125em;
-            color: rgb(255, 255, 255);
-            float: right;
+    }
+}
+.speakers-wrap{
+    height: auto;
+    padding-bottom: 35px;
+    div.content{
+        text-align: center;
+        padding-top: 79px;
+        color: rgb(39, 42, 50);
+        height: auto;
+        .speakers-list{
+            .speaker{
+                margin: 0px 0px 0px 10px;
+                border: 0px;
+                width: calc(50% - 10px);
+                float: left;
+                height: 249px;
+                img{
+                    float: left;
+                    width: 178px;
+                    margin-right: 30px;
+                }
+                .desc{ 
+                       text-align: left;
+                    .speaker-name{
+                        font-size: 22px;
+                    }
+                    .speaker-tag-name{
+                        font-size: 14px;
+                        margin-top: 5px;
+                    }
+                    .speaker-job{
+                        font-size: 13px;
+                        color: rgb(255, 79, 56);
+                        text-align: left;
+                    }
+                    .speaker-desc{
+                        word-break: keep-all;
+                        text-align: left;
+                        font-size: 0.875em;
+                        padding-right: 1em;
+                        line-height: 24px;
+                        margin-top: 24px;
+                    }
+                }
+                
+            }
         }
+        .more-link{
+            color: rgb(51, 51, 51);
+        }
+    }
+}
+.angel-sponsors{
+    color: rgb(51, 51, 51);
+    text-align: center;
+   div.content{
+    text-align: center;
+    padding: 79px 16px 45px;
+    color: rgb(39, 42, 50);
+    height: auto;
+
+    a{
+        display: block;
+        margin: 32px;
+    }
+   }
+}
+.sponsors-wrap{
+    text-align: center;
+    .content {
+        text-align: center;
+        padding: 79px 16px 45px;
+        color: #272a32;
+        height: auto;
+        .sponsor-logos{
+            overflow: auto;
+            height: auto;
+            margin: 0px;
+            padding: 0px;
+            vertical-align: middle;
+            text-align: center;
+            width: 100%;
+            position: relative;
+            a{
+                vertical-align: middle;
+                display: inline-block;
+                position: relative;
+                margin-right: 50px;
+                img{
+                    width: 200px;
+                }
+            }
+        }
+    }
+   
+}
+footer {
+    font-size: 0.875em;
+    color: rgb(255, 255, 255);
+    background-color: rgb(46, 46, 46);
+    padding: 32px;
+    .content {
+        img{
+            margin-top: 21px;
+            float: left;
+            vertical-align: middle;
+            text-align: center;
+            margin-right: 28px;
+        }
+       
     }
 }
 @media screen and (max-width: 1000px){
