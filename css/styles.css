@@ -291,6 +291,63 @@ footer .content img {
   width: 200px;
 }
 
+footer.dark_footer {
+  background-color: #2e2e2e;
+}
+footer.dark_footer div.content {
+  color: white;
+}
+footer.dark_footer div.content img {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(4deg) brightness(103%) contrast(103%);
+}
+
+.about-landing-wrap {
+  background: #f7f7f8 url(/images/base/desktop/bg_about.png) center no-repeat;
+  height: auto;
+  overflow: auto;
+  height: 855px;
+}
+.about-landing-wrap div.content {
+  padding-top: 140px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.about-landing-wrap div.content .header-card {
+  text-align: center;
+  margin: 0 auto 33px;
+  padding: 32px;
+  line-height: 25px;
+  border: 1px solid #dfdfdf;
+  width: 960px;
+  background-color: #fff;
+  font-size: 0.875em;
+}
+.about-landing-wrap div.content .header-card img {
+  margin: 20px;
+}
+.about-landing-wrap div.content a {
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.logo-wrapper .content {
+  text-align: center;
+  padding: 79px 16px 45px;
+}
+.logo-wrapper .content img {
+  margin: 32px 0;
+}
+
+.summits-wrapper .content {
+  text-align: center;
+  padding: 79px 16px 45px;
+}
+.summits-wrapper .content .past-links {
+  padding: 20px;
+}
+
 @media screen and (max-width: 1000px) {
   .header_wrap {
     display: none;
