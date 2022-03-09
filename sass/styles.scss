@@ -376,7 +376,17 @@ header div.content {
         }
       }
     }
-
+    .more-btn{
+      width: 100%; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 16px;
+      display: none;
+      img{
+          margin-left: 8px;
+      }
+    }
     .more-link {
       color: rgb(51 51 51);
     }
@@ -396,6 +406,9 @@ header div.content {
             height: 120px;
           }
         }
+      }
+      .more-btn{
+          display: block;
       }
     }
   }
