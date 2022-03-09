@@ -38,6 +38,11 @@
 header div.content {
     height: 80px;
     line-height: 80px;
+    a{
+        img{
+            margin-top: 13px;
+        }
+    }
     nav{
     width: calc(100% - 130px);
     height: 80px;
