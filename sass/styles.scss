@@ -165,7 +165,7 @@ header div.content {
     padding-top: 140px;
     padding-bottom: 60px;
 
-    summary {
+    .summary {
       text-align: justify;
       width: 631px;
       border: 4px solid rgb(255 255 255);
@@ -197,7 +197,7 @@ header div.content {
         width: 90%;
       }
 
-      summary {
+      .summary {
         width: unset;
         line-height: unset;
         text-align: left;
