@@ -243,7 +243,7 @@ header div.content nav .nav-list li .active {
 }
 
 .landing-wrap {
-  background-image: url("/images/base/desktop/bg_landing.png");
+  background-image: url("images/base/desktop/bg_landing.png");
   background-repeat: repeat-x;
   background-position: center center;
 }
@@ -310,7 +310,7 @@ header div.content nav .nav-list li .active {
 }
 
 .program-wrap {
-  background-image: url("/images/base/pattern_bg.png");
+  background-image: url("images/base/pattern_bg.png");
   background-repeat: repeat;
   background-color: #272a32;
   height: 637px;
@@ -578,7 +578,7 @@ footer.dark_footer div.content img {
 }
 
 .about-landing-wrap {
-  background: #f7f7f8 url("/images/base/desktop/bg_about.png") center no-repeat;
+  background: #f7f7f8 url("images/base/desktop/bg_about.png") center no-repeat;
   height: auto;
   overflow: auto;
 }

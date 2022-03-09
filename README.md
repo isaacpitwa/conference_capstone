@@ -5,11 +5,12 @@
 > Project capstone 1: online website for a conference.
 
 ## Live preview
-
+My capstone project can be accessed  [here](https://isaacpitwa.github.io/conference_capstone/)
 
 ## Built With
 
-- HTML & CSS
+- HTML & CSS Sass
+- Javascript
 - GitFlow
 - Linters
 - Documented Work
