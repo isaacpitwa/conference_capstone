@@ -25,7 +25,8 @@ My capstone project can be accessed  [here](https://isaacpitwa.github.io/confere
 - Twitter: [@isaacpitwa](https://twitter.com/isaacpitwa)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/isaac-pitwa)
 
-
+## Attribution
+Original design Idea by  [Cindy Shin](https://www.behance.net/adagio07)
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
@@ -39,4 +40,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is [Creative Commons](https://creativecommons.org/licenses/by-nc/4.0/legalcode) licensed.
