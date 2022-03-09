@@ -104,7 +104,7 @@ function showMoreSpeakers() {
                                     </div>
                                 </div>`;
     speakersList.insertAdjacentHTML('afterbegin', speakerHTML);
-    document.getElementById('more-btn').classList.add('hidden');
+    document.getElementById('more-btn').classList.add('hide');
   });
 }
 // Toggles Mobile Menu

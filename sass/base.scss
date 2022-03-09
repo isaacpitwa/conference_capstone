@@ -63,8 +63,11 @@ a.more-link {
 }
 
 .hidden {
-  display: none !important;
+  display: none;
 }
+.hide {
+    display: none !important;
+  }
 
 section {
   .hamburg {
