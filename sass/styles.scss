@@ -155,7 +155,7 @@ header div.content {
 }
 
 .landing-wrap {
-  background-image: url("images/base/desktop/bg_landing.png");
+  background-image: url("../images/base/desktop/bg_landing.png");
   background-repeat: repeat-x;
   background-position: center center;
 
@@ -220,7 +220,7 @@ header div.content {
 }
 
 .program-wrap {
-  background-image: url("images/base/pattern_bg.png");
+  background-image: url("../images/base/pattern_bg.png");
   background-repeat: repeat;
   background-color: rgb(39 42 50);
   height: 637px;
@@ -509,7 +509,7 @@ footer.dark_footer {
 
 // About
 .about-landing-wrap {
-  background: #f7f7f8 url("images/base/desktop/bg_about.png") center no-repeat;
+  background: #f7f7f8 url("../images/base/desktop/bg_about.png") center no-repeat;
   height: auto;
   overflow: auto;
 
