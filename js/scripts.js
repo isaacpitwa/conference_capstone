@@ -62,3 +62,7 @@ speakers.reverse().forEach((speaker)=>{
     
 })
 }
+// Toggles Mobile Menu
+function toggleMenu() {
+    document.getElementById('toggle-menu').classList.toggle('toggle-menu');
+}

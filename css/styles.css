@@ -30,6 +30,11 @@ a {
   width: 98%;
   margin: 0px auto;
 }
+@media (max-width: 768px) {
+  .container > nav, .container div.content {
+    width: 90%;
+  }
+}
 
 .guide-bar {
   width: 53px;
@@ -56,6 +61,17 @@ a.more-link {
 
 .hidden {
   display: none;
+}
+
+section .hamburg {
+  width: 32px !important;
+  display: none;
+  margin: 36px 0;
+}
+@media (max-width: 768px) {
+  section .hamburg {
+    display: block;
+  }
 }
 
 .top-menu {
@@ -88,14 +104,6 @@ a.more-link {
 .header-wrap {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 8px 0px;
   position: relative;
-}
-.header-wrap .mobile_header {
-  position: relative;
-  padding: 16px 32px;
-}
-.header-wrap .mobile_header .hamburg {
-  width: 30px;
-  margin-top: 16px;
 }
 @media (max-width: 768px) {
   .header-wrap {
@@ -149,6 +157,58 @@ header div.content nav .nav-list li .active {
   }
 }
 
+.toggle-menu {
+  display: none;
+}
+@media (max-width: 768px) {
+  .toggle-menu {
+    display: unset;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background: #272a32;
+    opacity: 0.95;
+  }
+  .toggle-menu .close-wrapper {
+    display: block;
+    padding: 16px;
+  }
+  .toggle-menu .close-wrapper img {
+    float: right;
+  }
+  .toggle-menu .toggle-nav .nav-list {
+    padding: 0 16px;
+  }
+  .toggle-menu .toggle-nav .nav-list .nav-item {
+    border-bottom: 1px solid #dfdfdf;
+    padding: 16px 0;
+  }
+  .toggle-menu .toggle-nav .nav-list .nav-item a {
+    color: #fff;
+  }
+  .toggle-menu .toggle-nav .nav-list .nav-item:last-child {
+    border: none;
+    text-align: center;
+    padding-top: 42px;
+  }
+  .toggle-menu .toggle-nav .nav-list .nav-item:last-child a {
+    color: #ef513c;
+    padding: 10px 36px;
+  }
+  .toggle-menu .toggle-nav .nav-list .btn-link {
+    font-size: 1.125em;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 15px;
+    color: #ef513c;
+    border: 2px solid #ef513c;
+    margin-top: 8px;
+  }
+  .toggle-menu .toggle-nav .nav-list .active {
+    color: #ef513c;
+  }
+}
+
 .landing-wrap {
   background-image: url(/images/base/desktop/bg_landing.png);
   background-repeat: repeat-x;
@@ -156,6 +216,7 @@ header div.content nav .nav-list li .active {
 }
 .landing-wrap div.content {
   padding-top: 140px;
+  padding-bottom: 60px;
 }
 .landing-wrap div.content summary {
   text-align: justify;
@@ -179,8 +240,8 @@ header div.content nav .nav-list li .active {
 }
 @media (max-width: 768px) {
   .landing-wrap div.content {
-    text-align: center;
-    padding-top: 51px;
+    text-align: left;
+    padding-top: 8px;
   }
   .landing-wrap div.content img {
     width: 90%;
@@ -188,11 +249,11 @@ header div.content nav .nav-list li .active {
   .landing-wrap div.content summary {
     width: unset;
     line-height: unset;
-    text-align: center;
+    text-align: left;
   }
   .landing-wrap div.content .location {
     padding: 8px;
-    text-align: center;
+    text-align: left;
   }
   .landing-wrap div.content .location h2 {
     font-size: 21px;
@@ -243,6 +304,10 @@ header div.content nav .nav-list li .active {
   padding: 8px 17px;
   line-height: 1.5em;
 }
+.program-wrap div.content .program-list .program-card:hover {
+  border: 1px solid #fff;
+  cursor: pointer;
+}
 .program-wrap .join-btn {
   display: none;
 }
@@ -266,6 +331,7 @@ header div.content nav .nav-list li .active {
     text-align: left;
     font-size: 18px;
     flex: 1 1 0;
+    margin: 0 8px;
   }
   .program-wrap div.content .program-list .program-card p {
     text-align: left;
@@ -458,6 +524,23 @@ footer.dark_footer div.content img {
   font-size: 18px;
   text-decoration: underline;
 }
+@media (max-width: 768px) {
+  .about-landing-wrap {
+    height: auto;
+  }
+  .about-landing-wrap div.content {
+    padding: 18px;
+    text-align: left;
+    align-items: flex-start;
+  }
+  .about-landing-wrap div.content img.title-image {
+    width: 90%;
+  }
+  .about-landing-wrap div.content .header-card {
+    width: unset;
+    padding: 28px;
+  }
+}
 
 .logo-wrapper .content {
   text-align: center;
@@ -466,6 +549,14 @@ footer.dark_footer div.content img {
 .logo-wrapper .content img {
   margin: 32px 0;
 }
+@media (max-width: 768px) {
+  .logo-wrapper .content {
+    padding: 48px 12px 36px;
+  }
+  .logo-wrapper .content img {
+    width: 90%;
+  }
+}
 
 .summits-wrapper .content {
   text-align: center;
@@ -473,6 +564,15 @@ footer.dark_footer div.content img {
 }
 .summits-wrapper .content .past-links {
   padding: 20px;
+}
+@media (max-width: 768px) {
+  .summits-wrapper .content {
+    padding: 48px 12px 36px;
+  }
+  .summits-wrapper .content .past-links img {
+    width: 95%;
+    margin-top: 10px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
