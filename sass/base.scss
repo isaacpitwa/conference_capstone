@@ -1,0 +1,82 @@
+/* stylelint-disable no-descending-specificity */
+/* stylelint-disable selector-class-pattern */
+$bg-black :rgb(62 62 62);
+
+* {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+
+  @media (max-width: 768px) {
+    width: unset;
+    overflow-x: hidden;
+  }
+}
+
+.container > nav,
+.container div.content {
+  max-width: 1100px;
+  width: 98%;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+}
+
+.guide-bar {
+  width: 53px;
+  border-top: 1px solid rgb(239 81 60);
+  margin: 16px auto 54px;
+}
+
+.b-bottom {
+  border-bottom: 1px solid rgb(223 223 223);
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+a.more-link {
+  font-size: 1.125em;
+  color: rgb(255 255 255);
+  text-align: center;
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
+}
+.hide {
+    display: none !important;
+  }
+
+section {
+  .hamburg {
+    width: 32px !important;
+    display: none;
+    margin: 36px 0;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+}
